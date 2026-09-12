@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Architectural Contact & Consultation Desk - BUILDEX.pl Poland</title>
+  <meta name="description" content="Get in touch with BUILDEX Poland's structural engineering and architectural consulting team in Warsaw. Order sample kits and request project quotes.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="fluid-container top-bar-inner">
+      <div>📍 Architectural Sales & Engineering Office | Warsaw, PL</div>
+      <ul class="top-bar-links">
+        <li><a href="#">B2B Partner Portal</a></li>
+        <li><a href="#">CAD / BIM Library</a></li>
+        <li><a href="contact.html">Architect Hotline: +48 22 800 900</a></li>
+        <li><a href="#">EN / PL</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="main-header">
+    <div class="fluid-container header-inner">
+      
+      <!-- HEADER LEFT: HAMBURGER BUTTON (LEFT) + BUILDEX LOGO (RIGHT OF BUTTON) -->
+      <div class="header-left">
+        <button class="mobile-nav-toggle" id="mobile-nav-btn" title="Toggle Navigation Menu">☰</button>
+        <a href="index.html" class="logo">
+          BUILDEX<span>.PL</span> <span class="logo-badge">B2B</span>
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="category.html" class="nav-link">Product Categories</a></li>
+          <li><a href="product-detail.html?id=2" class="nav-link">Featured Product</a></li>
+          <li><a href="contact.html" class="nav-link active">B2B Contact & Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <input type="text" placeholder="Search Material SKU or Specs...">
+        </div>
+
+        <!-- DARK / LIGHT MODE TOGGLE BUTTON -->
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Mode">🌙</button>
+
+        <button class="btn btn-primary open-quote-modal">
+          <span class="btn-text-desktop">Request B2B Quote</span>
+          <span class="btn-text-mobile">Quote</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb-link">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Technical Inquiry & Desk
+      </div>
+      <h1>B2B Architectural & Engineering Desk</h1>
+      <p>Speak directly with our senior facade engineers and BIM specialists for project spec reviews, custom fabrications, and sample dispatches.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <main class="section container">
+    
+    <!-- 3 DIRECT CONTACT CHANNEL CARDS -->
+    <div class="contact-channels-grid">
+      
+      <div class="channel-card">
+        <div class="channel-icon">📞</div>
+        <div>
+          <div class="channel-title">Architect Hotline</div>
+          <div class="channel-detail">+48 22 800 900</div>
+          <div class="channel-sub">Mon–Fri 8:00 – 18:00 CET (Direct Tech Line)</div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <div class="channel-icon">✉️</div>
+        <div>
+          <div class="channel-title">Engineering Desk</div>
+          <div class="channel-detail">architect@buildex.pl</div>
+          <div class="channel-sub">Response within 2 business hours</div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <div class="channel-icon">📦</div>
+        <div>
+          <div class="channel-title">Sample Box Dispatch</div>
+          <div class="channel-detail">samples@buildex.pl</div>
+          <div class="channel-sub">24h Priority Courier Dispatch</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MAIN TWO-COLUMN LAYOUT -->
+    <div class="contact-main-grid">
+      
+      <!-- ELEVATED CONTACT FORM CARD -->
+      <div class="contact-form-card">
+        <div class="contact-form-header">
+          <div>
+            <h2 style="font-size: 1.65rem; font-weight: 800;">Send Technical Inquiry</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Our senior facade engineers will review your drawings & specifications.</p>
+          </div>
+          <span class="badge-tag">Fast Reply &lt; 2h</span>
+        </div>
+
+        <form id="contact-page-form">
+          <div class="form-group">
+            <label for="c_company">Company / Architectural Studio *</label>
+            <input type="text" id="c_company" class="form-control" required placeholder="e.g. Warsaw Architectural Associates">
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label for="c_name">Full Name *</label>
+              <input type="text" id="c_name" class="form-control" required placeholder="Piotr Nowak">
+            </div>
+            <div class="form-group">
+              <label for="c_email">Work Email *</label>
+              <input type="email" id="c_email" class="form-control" required placeholder="p.nowak@studio-arch.pl">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="c_phone">Phone / WhatsApp Number</label>
+            <input type="text" id="c_phone" class="form-control" placeholder="+48 22 123 4567">
+          </div>
+
+          <div class="form-group">
+            <label for="c_msg">Project Specifications & Questions *</label>
+            <textarea id="c_msg" class="form-control" rows="5" required placeholder="Detail your project location, total surface m², fire safety requirements, expected delivery timeline..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">Submit Engineering Inquiry →</button>
+        </form>
+      </div>
+
+      <!-- OFFICE DETAILS & FAQ ACCORDION -->
+      <div>
+        
+        <!-- HEADQUARTERS INFO BOX -->
+        <div class="hq-info-box">
+          <h3 class="hq-title">🏛️ Warsaw Headquarters & Logistics Hub</h3>
+          <ul class="hq-list">
+            <li>📍 <strong>Office Address:</strong> Al. Jerozolimskie 180, 02-486 Warszawa, Poland</li>
+            <li>💼 <strong>VAT ID (NIP):</strong> PL5213948192</li>
+            <li>📞 <strong>Direct Phone:</strong> +48 22 800 900</li>
+            <li>✉️ <strong>Technical Desk:</strong> architect@buildex.pl</li>
+            <li>🚚 <strong>Warehouse Logistics:</strong> Central European Distribution Center (Warsaw Industrial District)</li>
+          </ul>
+        </div>
+
+        <!-- FAQ ACCORDION SECTION -->
+        <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 1.25rem;">Frequently Asked B2B Questions</h3>
+        <div class="accordion">
+          
+          <div class="accordion-item active">
+            <div class="accordion-header">
+              How quickly can physical sample boxes be delivered?
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              Physical material sample boxes are dispatched via priority courier within 24 hours of request, arriving at architectural offices across Poland and Central Europe within 48 hours.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              Do you provide certified BIM & Revit 3D objects?
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              Yes, 100% of our facade panels, acoustic slats, and fire glass assemblies feature downloadable Revit (.RFA), ArchiCAD (.GSM), and AutoCAD (.DWG) BIM files with embedded material thermal and fire properties.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              What fire safety certifications do BUILDEX materials hold?
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              All materials supplied by BUILDEX Poland comply strictly with European Standard EN 13501-1, carrying ratings from Class A1 non-combustible for ceramic panels to EI-90 and EI-120 for fire-rated structural glass.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">BUILDEX<span>.PL</span></a>
+          <p>BUILDEX Poland is the authoritative B2B platform for architectural facades, acoustic timber, fire glazing, and premium construction materials.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="category.html">Facade Rainscreen Panels</a></li>
+            <li><a href="category.html">Acoustic Slat Ceilings</a></li>
+            <li><a href="category.html">Structural Fire Glass</a></li>
+            <li><a href="category.html">Architectural Metal Mesh</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Architect Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Revit & CAD Library</a></li>
+            <li><a href="#">Request Physical Sample Box</a></li>
+            <li><a href="#">Fire Safety Certification Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">About BUILDEX Poland</a></li>
+            <li><a href="contact.html">B2B Sales Inquiry</a></li>
+            <li><a href="contact.html">Architectural Technical Desk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 BUILDEX.PL Sp. z o.o. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- B2B QUOTE REQUEST MODAL -->
+  <div class="modal-overlay" id="quote-modal">
+    <div class="modal-card">
+      <button class="modal-close">&times;</button>
+      <h2 style="font-size: 1.5rem; margin-bottom: 0.25rem;">Request B2B Technical Quote</h2>
+      <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.5rem;">Fill in your project specs and our structural engineers will reply within 2 business hours.</p>
+
+      <form id="quote-form">
+        <div class="form-group">
+          <label for="company_name">Company / Architectural Office *</label>
+          <input type="text" id="company_name" class="form-control" required placeholder="e.g. Studio Architektury Warsaw">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="contact_name">Contact Person *</label>
+            <input type="text" id="contact_name" class="form-control" required placeholder="Jan Kowalski">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Work Email *</label>
+            <input type="email" id="contact_email" class="form-control" required placeholder="jan@arch-studio.pl">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="material_cat">Material Category</label>
+            <select id="material_cat" class="form-control">
+              <option>Facade Cladding Panels</option>
+              <option>Acoustic Timber Systems</option>
+              <option>Structural Glass & Glazing</option>
+              <option>Architectural Metal Mesh</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="est_qty">Estimated Quantity (m²)</label>
+            <input type="text" id="est_qty" class="form-control" placeholder="e.g. 1,500 m²">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project_notes">Project Notes & Specs</label>
+          <textarea id="project_notes" class="form-control" rows="3" placeholder="Provide fire classification requirements, color preferences, delivery location..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit B2B Quote Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

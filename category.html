@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Product Catalog (20 Materials) - BUILDEX.pl B2B</title>
+  <meta name="description" content="Explore BUILDEX Poland's catalog of rainscreen facade panels, acoustic timber slats, fire-rated structural glass, and PIR thermal insulation boards.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="fluid-container top-bar-inner">
+      <div>📍 Architectural Sales & Engineering Office | Warsaw, PL</div>
+      <ul class="top-bar-links">
+        <li><a href="#">B2B Partner Portal</a></li>
+        <li><a href="#">CAD / BIM Library</a></li>
+        <li><a href="contact.html">Architect Hotline: +48 22 800 900</a></li>
+        <li><a href="#">EN / PL</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="main-header">
+    <div class="fluid-container header-inner">
+      
+      <!-- HEADER LEFT: HAMBURGER BUTTON (LEFT) + BUILDEX LOGO (RIGHT OF BUTTON) -->
+      <div class="header-left">
+        <button class="mobile-nav-toggle" id="mobile-nav-btn" title="Toggle Navigation Menu">☰</button>
+        <a href="index.html" class="logo">
+          BUILDEX<span>.PL</span> <span class="logo-badge">B2B</span>
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="category.html" class="nav-link active">Product Categories</a></li>
+          <li><a href="product-detail.html?id=2" class="nav-link">Featured Product</a></li>
+          <li><a href="contact.html" class="nav-link">B2B Contact & Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <input type="text" placeholder="Search Material SKU or Specs...">
+        </div>
+
+        <!-- DARK / LIGHT MODE TOGGLE BUTTON -->
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Mode">🌙</button>
+
+        <button class="btn btn-primary open-quote-modal">
+          <span class="btn-text-desktop">Request B2B Quote</span>
+          <span class="btn-text-mobile">Quote</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB & PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb-link">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Product Categories Catalog
+      </div>
+      <h1>Architectural Materials Catalog</h1>
+      <p>Browse 20 European-certified high-performance architectural systems. (Showing 8 cards per page view).</p>
+    </div>
+  </section>
+
+  <!-- MAIN CATEGORY CONTENT -->
+  <main class="section container">
+    <div class="category-layout">
+
+      <!-- PRODUCTS CONTENT AREA -->
+      <section>
+        
+        <!-- TOOLBAR: COUNT, SORT, GRID/LIST TOGGLE -->
+        <div class="view-toolbar">
+          <div class="results-count" id="results-count-text">
+            Showing <strong>1 - 8</strong> of <strong>20</strong> materials
+          </div>
+
+          <div class="toolbar-controls">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+              <label for="sort-select" style="color: var(--text-muted);">Sort By:</label>
+              <select id="sort-select" class="form-control" style="padding: 0.35rem 0.75rem; width: auto;">
+                <option>Featured First</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Fire Rating</option>
+              </select>
+            </div>
+
+            <!-- GRID / LIST VIEW TOGGLE BUTTONS -->
+            <div class="view-toggle-btns">
+              <button class="toggle-btn active" id="grid-view-btn">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg> Grid
+              </button>
+              <button class="toggle-btn" id="list-view-btn">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg> List
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTS WRAPPER (20 DISTINCT ARCHITECTURAL ITEMS) -->
+        <div class="products-wrapper grid-view" id="products-grid">
+
+          <!-- Card 1 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Fire-Class A1</span>
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="VitraPro Ceramic Panel">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=1">VitraPro Ceramic Rain-screen Panel</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">1200x600mm</span>
+                <span class="spec-pill">Weight: 18kg/m²</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€48.50 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=1" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge">NRC 0.95</span>
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="NordicWood Acoustic Slat">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Acoustic Ceilings</span>
+              <h3 class="product-title"><a href="product-detail.html?id=2">NordicWood Natural Oak Slat Panel</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">FSC Oak</span>
+                <span class="spec-pill">Class B-s1,d0</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€62.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=2" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">EI-90 Rated</span>
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="PyroShield Fire Glass">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Structural Glazing</span>
+              <h3 class="product-title"><a href="product-detail.html?id=3">PyroShield Triple Fire-Glass Unit</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">32mm Thick</span>
+                <span class="spec-pill">Sound: 44dB</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€185.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=3" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge">Custom Finishes</span>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Expanded Metal Screen">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Metal Mesh & Grilles</span>
+              <h3 class="product-title"><a href="product-detail.html?id=4">Anodized AnodoMesh Facade Screen</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">Aluminum 3mm</span>
+                <span class="spec-pill">62% Open Area</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€39.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=4" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Lambda 0.021</span>
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="PIR Thermal Board">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Thermal Insulation</span>
+              <h3 class="product-title"><a href="product-detail.html?id=5">ThermaShield High-Density PIR Board</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">120mm Thick</span>
+                <span class="spec-pill">Class E Fire</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€24.80 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=5" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge">Weather-proof</span>
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Textured Concrete Board">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=6">ConcreTex Fiber Reinforced Panel</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">3000x1200mm</span>
+                <span class="spec-pill">A2-s1,d0</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€54.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=6" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge">Fire Core FR</span>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="AlumaClad ACM Panel">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=7">AlumaClad Aluminum Composite Panel</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">3200x1500x4mm</span>
+                <span class="spec-pill">Class B-s1,d0</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€42.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=7" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="product-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">PET Recycled</span>
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Acoustic Felt Baffle">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Acoustic Ceilings</span>
+              <h3 class="product-title"><a href="product-detail.html?id=8">SoundBlock Acoustic Felt Baffle</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">200mm Height</span>
+                <span class="spec-pill">NRC 0.90</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€58.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=8" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARDS 9 TO 20 (PAGE 2 & 3 ITEMS) -->
+          
+          <!-- Card 9 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">Triple Glazed</span>
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="GlassWall Structural Curtain">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Structural Glazing</span>
+              <h3 class="product-title"><a href="product-detail.html?id=9">GlassWall Structural Glass Curtain</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">U-Value 0.6</span>
+                <span class="spec-pill">Rw 46 dB</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€210.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=9" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 10 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">CNC Perforated</span>
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="PerfoSteel Metal Screen">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Metal Mesh & Grilles</span>
+              <h3 class="product-title"><a href="product-detail.html?id=10">PerfoSteel Decorative Metal Screen</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">2.5mm Steel</span>
+                <span class="spec-pill">45% Open</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€46.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=10" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 11 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">Class A1 Fire</span>
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="EcoRock Mineral Wool">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Thermal Insulation</span>
+              <h3 class="product-title"><a href="product-detail.html?id=11">EcoRock High-Density Mineral Wool</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">110 kg/m³</span>
+                <span class="spec-pill">>1000°C Melt</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€19.50 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=11" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 12 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Natural Clay</span>
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="TerraCotta Louver">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=12">TerraCotta Sunshade Louver Slat</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">50x50x1500mm</span>
+                <span class="spec-pill">100% Clay</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€78.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=12" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 13 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">Self-Healing</span>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="TitaniumZinc Roofing">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=13">TitaniumZinc Standing Seam Roofing</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">0.7mm Zinc</span>
+                <span class="spec-pill">Quartz Patina</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€89.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=13" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 14 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Seamless 5m</span>
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="AcousticFabric Tensioned">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Acoustic Ceilings</span>
+              <h3 class="product-title"><a href="product-detail.html?id=14">AcousticFabric Tensioned Wall Covering</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">Max 5000mm</span>
+                <span class="spec-pill">NRC 0.85</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€52.50 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=14" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 15 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">EI-120 Rated</span>
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="FireCurtain EI-120 Wall">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Structural Glazing</span>
+              <h3 class="product-title"><a href="product-detail.html?id=15">FireCurtain EI-120 Automated Glass Wall</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">48mm Thick</span>
+                <span class="spec-pill">120 Min Fire</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€240.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=15" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 16 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Luxury Brass</span>
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="BrassMesh Screen">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Metal Mesh & Grilles</span>
+              <h3 class="product-title"><a href="product-detail.html?id=16">BrassMesh Decorative Interior Screen</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">Solid Brass</span>
+                <span class="spec-pill">38% Open</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€95.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=16" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 17 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">Space-Grade</span>
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="AerogelFlex Blanket">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Thermal Insulation</span>
+              <h3 class="product-title"><a href="product-detail.html?id=17">AerogelFlex Ultra-Thin Thermal Blanket</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">10mm Thick</span>
+                <span class="spec-pill">λ 0.015</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€115.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=17" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 18 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">Natural Slate</span>
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="FiberStone Veneer">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=18">FiberStone Ultra-Light Stone Veneer</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">2440x1220mm</span>
+                <span class="spec-pill">1.8 kg/m²</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€68.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=18" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 19 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge">Pre-Patinated</span>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="CopperPatina Panel">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Facade Cladding</span>
+              <h3 class="product-title"><a href="product-detail.html?id=19">CopperPatina Architectural Façade Panel</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">0.8mm Pure Copper</span>
+                <span class="spec-pill">Green Patina</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€135.00 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=19" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 20 -->
+          <article class="product-card hidden-card">
+            <div class="product-thumb">
+              <span class="product-badge copper">UV-Protected</span>
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="PolyCarbonate Sheet">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Structural Glazing</span>
+              <h3 class="product-title"><a href="product-detail.html?id=20">PolyCarbonate Multiwall Daylight Sheet</a></h3>
+              <div class="product-specs">
+                <span class="spec-pill">25mm 7-Wall</span>
+                <span class="spec-pill">U-Value 1.2</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">€34.50 <sub>/ m²</sub></div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="product-detail.html?id=20" class="btn btn-sm btn-outline">Details</a>
+                  <button class="btn btn-sm btn-primary open-quote-modal">Quote</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- VIEW MORE BUTTON & PAGINATION NAVIGATION (8 CARDS PER PAGE) -->
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 3rem;">
+          <button class="btn btn-outline" id="view-more-btn" style="padding: 0.85rem 2rem; font-size: 1rem;">
+            View All 20 Materials →
+          </button>
+
+          <!-- PAGINATION NUMBERS -->
+          <div style="display: flex; gap: 0.5rem; align-items: center;" id="pagination-controls">
+            <button class="pagination-btn" id="pag-prev" disabled>&larr;</button>
+            <button class="pagination-btn active" data-page="1">1</button>
+            <button class="pagination-btn" data-page="2">2</button>
+            <button class="pagination-btn" data-page="3">3</button>
+            <button class="pagination-btn" id="pag-next">&rarr;</button>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">BUILDEX<span>.PL</span></a>
+          <p>BUILDEX Poland is the authoritative B2B platform for architectural facades, acoustic timber, fire glazing, and premium construction materials.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="category.html">Facade Rainscreen Panels</a></li>
+            <li><a href="category.html">Acoustic Slat Ceilings</a></li>
+            <li><a href="category.html">Structural Fire Glass</a></li>
+            <li><a href="category.html">Architectural Metal Mesh</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Architect Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Revit & CAD Library</a></li>
+            <li><a href="#">Request Physical Sample Box</a></li>
+            <li><a href="#">Fire Safety Certification Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">About BUILDEX Poland</a></li>
+            <li><a href="contact.html">B2B Sales Inquiry</a></li>
+            <li><a href="contact.html">Architectural Technical Desk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 BUILDEX.PL Sp. z o.o. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- B2B QUOTE REQUEST MODAL -->
+  <div class="modal-overlay" id="quote-modal">
+    <div class="modal-card">
+      <button class="modal-close">&times;</button>
+      <h2 style="font-size: 1.5rem; margin-bottom: 0.25rem;">Request B2B Technical Quote</h2>
+      <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.5rem;">Fill in your project specs and our structural engineers will reply within 2 business hours.</p>
+
+      <form id="quote-form">
+        <div class="form-group">
+          <label for="company_name">Company / Architectural Office *</label>
+          <input type="text" id="company_name" class="form-control" required placeholder="e.g. Studio Architektury Warsaw">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="contact_name">Contact Person *</label>
+            <input type="text" id="contact_name" class="form-control" required placeholder="Jan Kowalski">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Work Email *</label>
+            <input type="email" id="contact_email" class="form-control" required placeholder="jan@arch-studio.pl">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="material_cat">Material Category</label>
+            <select id="material_cat" class="form-control">
+              <option>Facade Cladding Panels</option>
+              <option>Acoustic Timber Systems</option>
+              <option>Structural Glass & Glazing</option>
+              <option>Architectural Metal Mesh</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="est_qty">Estimated Quantity (m²)</label>
+            <input type="text" id="est_qty" class="form-control" placeholder="e.g. 1,500 m²">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project_notes">Project Notes & Specs</label>
+          <textarea id="project_notes" class="form-control" rows="3" placeholder="Provide fire classification requirements, color preferences, delivery location..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit B2B Quote Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
